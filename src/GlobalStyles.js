@@ -242,10 +242,19 @@ img {
     }
 }
 /***********responsive *********** */
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        display: none;
+}
+    
+}
 @media (max-width:650px){
     html{
+      
         font-size: 53%;
     }
+    
 }
+
 `;
 export default GlobalStyle;

@@ -5,7 +5,7 @@ import styled from "styled-components";
 import AreaHeader from "@/features/message-area/AreaHeader";
 const StyleMessageArea = styled.div`
     width: 100%;
-    padding: 0rem 1rem;
+    padding: 0rem 2rem;
     display: flex;
     flex-direction: column;
     @media (max-width: 540px) {

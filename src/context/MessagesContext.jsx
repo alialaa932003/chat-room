@@ -32,6 +32,20 @@ const MessagesProvider = ({ children }) => {
                 }),
                 type: "text",
             },
+            {
+                id: 3,
+                text: "hi that is my second message for testing the chat!",
+                sender: {
+                    id: 333,
+                    name: "ali alaa eldin",
+                    avatar: "/imgs/users/user10.webp",
+                },
+                timestamp: new Date().toLocaleTimeString([], {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                }),
+                type: "text",
+            },
         ],
         2: [
             {
@@ -62,6 +76,20 @@ const MessagesProvider = ({ children }) => {
                 }),
                 type: "text",
             },
+            {
+                id: 3,
+                text: "hi that is my second message for testing the chat!",
+                sender: {
+                    id: 333,
+                    name: "ali alaa eldin",
+                    avatar: "/imgs/users/user10.webp",
+                },
+                timestamp: new Date().toLocaleTimeString([], {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                }),
+                type: "text",
+            },
         ],
     });
     const users = [
@@ -74,6 +102,7 @@ const MessagesProvider = ({ children }) => {
             isPinned: true,
             totalMessages: 2,
             sent: true,
+            role: "admin",
         },
         {
             id: 2,
