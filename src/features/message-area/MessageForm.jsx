@@ -65,7 +65,7 @@ const MessageForm = () => {
     useAutomatedResponse(lastSentMessage, setMessagesState, reciverData);
     return (
         <MessageFormStyle onSubmit={handleSendMessage}>
-            <button type="button">
+            <button type="button" title="clip">
                 <FiPaperclip />
             </button>
             <Input
@@ -75,10 +75,10 @@ const MessageForm = () => {
                 }}
                 placeholder="your message..."
             />
-            <button type="button">
+            <button type="button" title="voice">
                 <IoMicOutline />
             </button>
-            <button type="submit">
+            <button type="submit" title="send">
                 <FiSend />
             </button>
         </MessageFormStyle>

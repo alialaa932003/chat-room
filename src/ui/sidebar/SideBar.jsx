@@ -96,7 +96,7 @@ const SideBar = () => {
     return (
         <StyledSideBar>
             <StyledBrand>
-                <img src="/imgs/logo.svg" alt="logo" />
+                <img src="/imgs/logo.svg" alt="logo" width={80} height={50} />
             </StyledBrand>
             <div style={{ width: "100%" }}>
                 <StyledList>

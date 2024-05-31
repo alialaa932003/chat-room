@@ -28,6 +28,7 @@ const Image = styled.div`
     & img {
         object-fit: cover;
         object-position: top;
+        height: 100%;
     }
 `;
 const Content = styled.div`
@@ -97,7 +98,7 @@ const ChatItem = ({ data }) => {
     return (
         <StyleItem to={`/chats/${data.id}`} isActive={isActive}>
             <Image>
-                <img src={data.img} alt={data.title} />
+                <img src={data.img} alt={data.title} width={50} height={50} />
             </Image>
             <Content>
                 <TitleParent>

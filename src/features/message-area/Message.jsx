@@ -93,6 +93,8 @@ const Message = ({ isSender = true, message, showAvatar }) => {
                     <img
                         src={message?.sender?.avatar}
                         alt={message?.sender?.name}
+                        width={30}
+                        height={30}
                     />
                 )}
             </Avatar>

@@ -54,7 +54,7 @@ const AreaHeader = () => {
     return (
         <StyledHeader>
             <Content>
-                <CloseChat to="/chats">
+                <CloseChat to="/chats" title="back">
                     <FaArrowLeftLong />
                 </CloseChat>
                 <Details>
@@ -63,13 +63,13 @@ const AreaHeader = () => {
                 </Details>
             </Content>
             <Actions>
-                <button>
+                <button title="chatSearch">
                     <GoSearch />
                 </button>
-                <button>
+                <button title="phone">
                     <BsTelephone />
                 </button>
-                <button>
+                <button title="dots">
                     <BsThreeDotsVertical />
                 </button>
             </Actions>
