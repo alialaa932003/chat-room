@@ -57,5 +57,6 @@ If I have more time, I plan to implement the following features to enhance the f
   
 ## Additional Notes
 1. **Live Preview**: https://chat-room-ali-alaa-eldin.vercel.app
-2. **Screenshot**:  (/projectImage.jpeg)
+2. **Screenshot**:  ![Screenshot](projectImage.jpeg)
+
 
