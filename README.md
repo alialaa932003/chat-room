@@ -54,3 +54,8 @@ If I have more time, I plan to implement the following features to enhance the f
 -   **Real Data Integration:** Update the user list with real data fetched from an API or database.
 -   **Real-time Updates:** Implement real-time communication using WebSockets to provide an authentic chat experience.
 -   **Advanced Features:** Include features like message notifications, typing indicators, and user presence status.
+  
+## Additional Notes
+1. **Live Preview**: https://chat-room-ali-alaa-eldin.vercel.app/chats/1
+2. **Screenshot**:  `projectImage.jpeg`.
+
