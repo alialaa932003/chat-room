@@ -39,7 +39,7 @@ const MessageForm = () => {
     const handleSendMessage = (e) => {
         e.preventDefault();
         // if the message is empty, do nothing
-        if (message === "") return;
+        if (message.trim() === "") return;
         // create a new message object
         const newMessage = {
             id: Math.random(),
