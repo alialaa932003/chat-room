@@ -1,7 +1,9 @@
 # chat-room
 
 Welcome to the Simple Chat App! This application simulates a real chat interface with interactive and functional features.
-
+## preview
+1. **Live Preview**: https://chat-room-ali-alaa-eldin.vercel.app
+2. **Screenshot**:  ![Screenshot](projectImage.jpeg)
 ## Features
 
 -   **Interactive Chat Interface**: Engage in a seamless chat experience.
@@ -55,8 +57,6 @@ If I have more time, I plan to implement the following features to enhance the f
 -   **Real-time Updates:** Implement real-time communication using WebSockets to provide an authentic chat experience.
 -   **Advanced Features:** Include features like message notifications, typing indicators, and user presence status.
   
-## Additional Notes
-1. **Live Preview**: https://chat-room-ali-alaa-eldin.vercel.app
-2. **Screenshot**:  ![Screenshot](projectImage.jpeg)
+
 
 
