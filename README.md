@@ -45,7 +45,7 @@ Start the development server:
 npm run dev
 ```
 
-### Future improvements
+## Future improvements
 
 Future Improvements
 If I have more time, I plan to implement the following features to enhance the functionality of the chat application:
