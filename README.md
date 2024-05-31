@@ -4,6 +4,7 @@ Welcome to the Simple Chat App! This application simulates a real chat interface
 ## preview
 1. **Live Preview**: https://chat-room-ali-alaa-eldin.vercel.app
 2. **Screenshot**:  ![Screenshot](projectImage.jpeg)
+3. **lighthouse statistics:**![lighthouse](lighthouse.png)
 ## Features
 
 -   **Interactive Chat Interface**: Engage in a seamless chat experience.
@@ -24,7 +25,7 @@ Ensure you have the following installed on your system:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/simple-chat-app.git
+    git clone https://github.com/alialaa932003/chat-room.git
     ```
 
 2. Navigate to the project directory:
@@ -53,8 +54,7 @@ Future Improvements
 If I have more time, I plan to implement the following features to enhance the functionality of the chat application:
 
 -   **User Search:** Add a feature to search through the user list.
--   **Real Data Integration:** Update the user list with real data fetched from an API or database.
--   **Real-time Updates:** Implement real-time communication using WebSockets to provide an authentic chat experience.
+-   **Collapsed Sidebar:** Collapsing the sidebar would help maximize the chat interface's space, especially on smaller screens, providing a cleaner and more focused chatting experience.
 -   **Advanced Features:** Include features like message notifications, typing indicators, and user presence status.
   
 
