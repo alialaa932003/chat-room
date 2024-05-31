@@ -28,7 +28,7 @@ Ensure you have the following installed on your system:
 2. Navigate to the project directory:
 
     ```sh
-    cd simple-chat-app
+    cd chat-room
     ```
 
 3. Install the dependencies:
@@ -42,5 +42,5 @@ Ensure you have the following installed on your system:
 Start the development server:
 
 ```sh
-npm start
+npm run dev
 ```
