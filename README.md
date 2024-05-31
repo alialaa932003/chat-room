@@ -56,6 +56,6 @@ If I have more time, I plan to implement the following features to enhance the f
 -   **Advanced Features:** Include features like message notifications, typing indicators, and user presence status.
   
 ## Additional Notes
-1. **Live Preview**: https://chat-room-ali-alaa-eldin.vercel.app/chats/1
-2. **Screenshot**:  `projectImage.jpeg`.
+1. **Live Preview**: https://chat-room-ali-alaa-eldin.vercel.app
+2. **Screenshot**:  `projectImage.jpeg`
 
