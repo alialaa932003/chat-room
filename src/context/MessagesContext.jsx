@@ -39,7 +39,7 @@ const MessagesProvider = ({ children }) => {
                 text: "This is an automated response!",
                 sender: {
                     id: 2,
-                    name: "jone doe",
+                    name: "ali alaa eldin elsyaed",
                     avatar: "/imgs/users/user2.webp",
                 },
                 timestamp: new Date().toLocaleTimeString([], {
@@ -68,7 +68,7 @@ const MessagesProvider = ({ children }) => {
         {
             id: 1,
             img: "/imgs/users/user1.webp",
-            title: "John Doe",
+            title: "Bob",
             message: "Hello, how are you?",
             date: "4m",
             isPinned: true,
