@@ -44,3 +44,13 @@ Start the development server:
 ```sh
 npm run dev
 ```
+
+### Future improvements
+
+Future Improvements
+If I have more time, I plan to implement the following features to enhance the functionality of the chat application:
+
+-   **User Search:** Add a feature to search through the user list.
+-   **Real Data Integration:** Update the user list with real data fetched from an API or database.
+-   **Real-time Updates:** Implement real-time communication using WebSockets to provide an authentic chat experience.
+-   **Advanced Features:** Include features like message notifications, typing indicators, and user presence status.
