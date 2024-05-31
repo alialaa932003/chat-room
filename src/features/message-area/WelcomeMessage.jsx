@@ -25,7 +25,7 @@ const WelcomeMessage = () => {
     return (
         <StyledWelcomeMessage className="animated fadeDown">
             <Logo>
-                <img src="/imgs/logo.svg" alt="logo" width={80} height={80} />
+                <img src="/imgs/logo.svg" alt="logo" width={300} height={300} />
             </Logo>
             <h1>Welcome to Chat Room</h1>
             <p>Click on a user to start chatting</p>

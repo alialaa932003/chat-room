@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 
 import React, { useEffect } from "react";
-import { Toaster } from "react-hot-toast";
 import { useLocation } from "react-router";
 import { styled } from "styled-components";
 import SideBar from "./sidebar/SideBar";
@@ -34,28 +33,6 @@ const AppLayout = () => {
 
     return (
         <div>
-            <Toaster
-                gutter={12}
-                position="top-center"
-                containerStyle={{ margin: "0px" }}
-                toastOptions={{
-                    success: {
-                        duration: 3000,
-                    },
-                    error: {
-                        duration: 5000,
-                    },
-
-                    style: {
-                        fontSize: "16px",
-                        maxWidth: "500px",
-                        padding: "16px 24px",
-                        backgroundColor: "var(--color-grey-0)",
-                        color: "var(--color-grey-700)",
-                    },
-                }}
-            />
-
             <AppLayoutStyle>
                 <SideBar />
                 <ContentLayoutStyle>
