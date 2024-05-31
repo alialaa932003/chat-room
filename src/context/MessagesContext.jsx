@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 const MessagesContext = createContext();
 const MessagesProvider = ({ children }) => {
+    // This is  messages dummy data for testing purposes
     const [messagesState, setMessagesState] = useState({
         1: [
             {
@@ -92,6 +93,7 @@ const MessagesProvider = ({ children }) => {
             },
         ],
     });
+    // This is users dummy data for testing purposes
     const users = [
         {
             id: 1,

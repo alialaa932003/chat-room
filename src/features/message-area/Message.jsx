@@ -83,7 +83,6 @@ const Date = styled.span`
     width: 100%;
     margin-top: 2rem;
 `;
-const Triangle = styled.span``;
 
 const Message = ({ isSender = true, message, showAvatar }) => {
     return (

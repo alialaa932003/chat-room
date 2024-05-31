@@ -25,6 +25,7 @@ const Home = () => {
         Boolean(userId) && isMobile
     );
     useEffect(() => {
+        // close the message area on mobile when therse is no userId
         setIsMessageAreaOpen(Boolean(userId) && isMobile);
     }, [userId, isMobile]);
     return (

@@ -65,6 +65,7 @@ const Content = styled.div`
 `;
 const GroupMembers = ({ handleClose }) => {
     const { users } = useMessagesContext();
+    // close the modal when clicking outside
     const ref = useOutsideClick(handleClose);
     return createPortal(
         <GroupMembersStyle ref={ref}>

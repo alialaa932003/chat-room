@@ -35,11 +35,12 @@ const MessageForm = () => {
     const { setMessagesState, users } = useMessagesContext();
     const { userId } = useParams();
     const [lastSentMessage, setLastSentMessage] = useState(null);
-
     const reciverData = users.find((user) => user.id == userId);
     const handleSendMessage = (e) => {
         e.preventDefault();
+        // if the message is empty, do nothing
         if (message === "") return;
+        // create a new message object
         const newMessage = {
             id: Math.random(),
             sender: {
@@ -53,15 +54,18 @@ const MessageForm = () => {
                 minute: "2-digit",
             }),
         };
+        // update the messages state
         setMessagesState((prevState) => {
             return {
                 ...prevState,
                 [userId]: [...(prevState[userId] || []), newMessage],
             };
         });
+        // set the last sent message
         setLastSentMessage(newMessage);
         setMessage("");
     };
+    // use the automated response hook
     useAutomatedResponse(lastSentMessage, setMessagesState, reciverData);
     return (
         <MessageFormStyle onSubmit={handleSendMessage}>

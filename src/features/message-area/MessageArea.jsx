@@ -4,7 +4,6 @@ import Message from "./Message";
 import MessageForm from "./MessageForm";
 import { useMessagesContext } from "@/context/MessagesContext";
 import { useParams } from "react-router-dom";
-import useAutomatedResponse from "./useAutomatedResponse";
 
 const StyledMessageArea = styled.div`
     height: 100%;
@@ -29,6 +28,7 @@ const MessageArea = () => {
     const messages = messagesState[userId] || [];
     console.log(messages);
     useEffect(() => {
+        // scroll to the bottom of the message area
         ref.current.scrollTop = ref.current.scrollHeight;
     }, [messagesState]);
     return (

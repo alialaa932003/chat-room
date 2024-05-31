@@ -21,13 +21,13 @@ const GroupInfoImages = () => {
     return (
         <StyledGroupInfoImages>
             <div>
-                <img src="/imgs/users/user1.webp" alt="" />
+                <img src="/imgs/users/user1.webp" alt="user1" />
             </div>
             <div>
-                <img src="/imgs/users/user1.webp" alt="" />
+                <img src="/imgs/users/user1.webp" alt="user1" />
             </div>
             <div>
-                <img src="/imgs/users/user1.webp" alt="" />
+                <img src="/imgs/users/user1.webp" alt="user1" />
             </div>
         </StyledGroupInfoImages>
     );
