@@ -10,6 +10,13 @@ import { LuImage, LuFiles, LuVideo, LuMusic4 } from "react-icons/lu";
 
 import styled from "styled-components";
 import GroupInfoImages from "./GroupInfoImages";
+const GroupInfoLayout = styled.div`
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    inset: 0;
+`;
 const GroupInfoStyle = styled.div`
     background: var(--color-grey-0);
     max-width: 50rem;
@@ -82,49 +89,51 @@ const GroupInfo = ({ handleClose }) => {
         },
     ];
     return createPortal(
-        <GroupInfoStyle ref={ref}>
-            <Header>
-                <h2>group info</h2>
-                <button onClick={handleClose}>
-                    <FaXmark />
-                </button>
-            </Header>
-            <Title>files</Title>
+        <GroupInfoLayout>
+            <GroupInfoStyle ref={ref}>
+                <Header>
+                    <h2>group info</h2>
+                    <button onClick={handleClose}>
+                        <FaXmark />
+                    </button>
+                </Header>
+                <Title>files</Title>
 
-            {items.map((item) => (
-                <Accordion
-                    className="animated fadeUp"
-                    sx={{
-                        "&.MuiAccordion-root": {
-                            background: "transparent",
-                            color: "var(--color-grey-500)",
-                            boxShadow: "none",
-                            border: "none",
-                        },
-                        "&.MuiAccordion-root::before": {
-                            display: "none",
-                        },
-                    }}
-                    key={item.id}
-                >
-                    <AccordionSummary
-                        expandIcon={<IoIosArrowDown />}
-                        aria-controls="panel1-content"
-                        id="panel1-header"
+                {items.map((item) => (
+                    <Accordion
+                        className="animated fadeUp"
                         sx={{
-                            fontSize: "1.8rem",
-                            margin: ".7rem 0",
+                            "&.MuiAccordion-root": {
+                                background: "transparent",
+                                color: "var(--color-grey-500)",
+                                boxShadow: "none",
+                                border: "none",
+                            },
+                            "&.MuiAccordion-root::before": {
+                                display: "none",
+                            },
                         }}
+                        key={item.id}
                     >
-                        <Item>
-                            <span>{item.icon}</span>
-                            {item.title}
-                        </Item>
-                    </AccordionSummary>
-                    <AccordionDetails>{item.body}</AccordionDetails>
-                </Accordion>
-            ))}
-        </GroupInfoStyle>,
+                        <AccordionSummary
+                            expandIcon={<IoIosArrowDown />}
+                            aria-controls="panel1-content"
+                            id="panel1-header"
+                            sx={{
+                                fontSize: "1.8rem",
+                                margin: ".7rem 0",
+                            }}
+                        >
+                            <Item>
+                                <span>{item.icon}</span>
+                                {item.title}
+                            </Item>
+                        </AccordionSummary>
+                        <AccordionDetails>{item.body}</AccordionDetails>
+                    </Accordion>
+                ))}
+            </GroupInfoStyle>
+        </GroupInfoLayout>,
         document.getElementById("portal")
     );
 };

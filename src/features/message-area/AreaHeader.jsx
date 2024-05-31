@@ -61,7 +61,11 @@ const AreaHeader = () => {
         <StyledHeader>
             <Content
                 onClick={() => {
-                    setIsMembersListOpened(true);
+                    setIsMembersListOpened((prev) => {
+                        console.log(prev);
+                        console.log(prev);
+                        return !prev;
+                    });
                 }}
             >
                 <CloseChat to="/chats" title="back">

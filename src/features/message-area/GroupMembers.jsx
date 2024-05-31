@@ -4,6 +4,13 @@ import React from "react";
 import { createPortal } from "react-dom";
 import { FaXmark } from "react-icons/fa6";
 import styled from "styled-components";
+const GroupMembersLayout = styled.div`
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    inset: 0;
+`;
 const GroupMembersStyle = styled.div`
     background: var(--color-brand-500);
     max-width: 50rem;
@@ -68,27 +75,29 @@ const GroupMembers = ({ handleClose }) => {
     // close the modal when clicking outside
     const ref = useOutsideClick(handleClose);
     return createPortal(
-        <GroupMembersStyle ref={ref}>
-            <Header>
-                <h2>23 members</h2>
-                <button onClick={handleClose}>
-                    <FaXmark />
-                </button>
-            </Header>
-            <MembersList className="">
-                {users.map((user) => (
-                    <Item className="animated fadeUp" key={user.id}>
-                        <Image>
-                            <img src={user.img} alt={user.title} />
-                        </Image>
-                        <Content>
-                            <h3>{user.title}</h3>
-                            <h4>{user.role}</h4>
-                        </Content>
-                    </Item>
-                ))}
-            </MembersList>
-        </GroupMembersStyle>,
+        <GroupMembersLayout>
+            <GroupMembersStyle ref={ref}>
+                <Header>
+                    <h2>23 members</h2>
+                    <button onClick={handleClose}>
+                        <FaXmark />
+                    </button>
+                </Header>
+                <MembersList className="">
+                    {users.map((user) => (
+                        <Item className="animated fadeUp" key={user.id}>
+                            <Image>
+                                <img src={user.img} alt={user.title} />
+                            </Image>
+                            <Content>
+                                <h3>{user.title}</h3>
+                                <h4>{user.role}</h4>
+                            </Content>
+                        </Item>
+                    ))}
+                </MembersList>
+            </GroupMembersStyle>
+        </GroupMembersLayout>,
         document.getElementById("portal")
     );
 };
