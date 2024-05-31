@@ -8,7 +8,7 @@ import SideBar from "./sidebar/SideBar";
 
 const AppLayoutStyle = styled.div`
     background: var(--color-grey-700);
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     overflow-x: hidden;
     padding: 1rem;

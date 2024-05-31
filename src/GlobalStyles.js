@@ -76,7 +76,7 @@ body {
     font-family: "poppins";
     color: var(--color-grey-700);
     font-weight: 400;
-    min-height: 100vh;
+    min-height: 100dvh;
     line-height: 1.5;
     font-size: 1.4rem;
     position: relative;

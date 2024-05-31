@@ -21,7 +21,7 @@ const style = {
     pt: 2,
     px: 4,
     pb: 3,
-    maxHeight: "90vh",
+    maxHeight: "90dvh",
     overflow: "auto",
 };
 const Header = styled.div`

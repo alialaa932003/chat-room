@@ -17,12 +17,13 @@ const StyledSideBar = styled.div`
     max-width: 11rem;
     min-width: 11rem;
     padding: 3rem 1rem;
-    max-height: 100vh;
+    max-height: 100dvh;
     overflow-y: scroll;
 
     @media (max-width: 540px) {
         max-width: 8rem;
         min-width: 8rem;
+        padding: 3rem 0;
     }
 `;
 const StyledBrand = styled.div`

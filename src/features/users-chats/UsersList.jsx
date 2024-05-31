@@ -5,7 +5,7 @@ import { useMessagesContext } from "@/context/MessagesContext";
 
 const StyleUsersList = styled.div`
     margin: 2rem 0;
-    max-height: 85vh;
+    max-height: 85dvh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;

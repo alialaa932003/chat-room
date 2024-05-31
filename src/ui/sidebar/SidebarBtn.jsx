@@ -8,7 +8,7 @@ const StyledBtn = styled.button`
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0.5rem;
     border-radius: var(--radius-md);
     width: 100%;
 

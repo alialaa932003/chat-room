@@ -17,7 +17,7 @@ const Area = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    max-height: 78vh;
+    max-height: 78dvh;
     overflow: scroll;
 `;
 
