@@ -2,7 +2,7 @@
 
 Welcome to the Simple Chat App! This application simulates a real chat interface with interactive and functional features.
 ## preview
-1. **Live Preview**: https://chat-room-ali-alaa-eldin.vercel.app
+1. **Live Preview**: https://chat-room-delta-pearl.vercel.app/
 2. **Screenshot**:  ![Screenshot](projectImage.jpeg)
 3. **lighthouse statistics:**![lighthouse](lighthouse.png)
 ## Features
